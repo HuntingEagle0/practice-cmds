@@ -5,3 +5,9 @@ The PR initially contained a faulty test and insufficient test coverage. The CI 
 
 Why CI caught it:  
 The test workflow automatically ran the test suite on the pull request, while the coverage workflow measured coverage and failed when it was below 85%. This allowed the problems to be detected automatically before the changes were merged
+to create a branch - git checkout -b <branch-name>
+to merge the branch to main - git push -u origin <branch name>
+pushing steps-
+git add .
+git commit -m "message"
+git push
