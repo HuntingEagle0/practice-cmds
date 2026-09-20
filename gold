@@ -1,0 +1,7 @@
+pip install -r requirements.txt
+python -m pytest --cov=src --cov-report=term-missing
+What was wrong:  
+The PR initially contained a faulty test and insufficient test coverage. The CI run identified the test issue and showed that coverage was below the required threshold.
+
+Why CI caught it:  
+The test workflow automatically ran the test suite on the pull request, while the coverage workflow measured coverage and failed when it was below 85%. This allowed the problems to be detected automatically before the changes were merged
